@@ -1,0 +1,132 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family : Georgia, serif;
+    line-height: 1.5;
+    background-color: #ffffff;
+}
+
+/* box1| nav-bar */
+
+.header {
+    background-color: #003049;
+    color: white;
+    padding: 10px 5px; 
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 10px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu {
+    list-style: none; 
+    display: flex;
+    padding: 0;
+}
+ 
+.nav-items {
+    margin: 0 15px;
+}
+
+.nav-items a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px; 
+    transition: all 0.3s ease;
+}
+
+.nav-items a:hover {
+    color: #ffb703;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+
+/* box2| home-sec */
+
+.home-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    background-color:#edede9;
+    color: black;
+    border-radius: 5px;
+}
+
+.home-content {
+    background-color: whitesmoke;    
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.about-sec, .projects-sec {
+    padding: 60px 20px;
+    background-color: #edede9;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* box3| about and project-sec */
+.about-sec h2, .projects-sec h2 {
+    text-align: center;
+}
+
+.project {
+    background-color:#edede9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* box4| footer section */
+
+.footer {
+    width: 100%;
+    background-color: #669bbc;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .footer-contact {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+        padding: 0;
+    }
+
+    .footer-bottom {
+        margin-top: 10px;
+    }
+}
+
+
+
